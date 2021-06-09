@@ -1,1 +1,12 @@
 @import '../../index.scss';
+
+.forget-form-finish-comp {
+    .result-content {
+        column-gap: 10px;
+
+        .check-icon {
+            font-size: 40px;
+            color: $green;
+        }
+    }
+}
