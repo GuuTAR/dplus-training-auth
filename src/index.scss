@@ -1,3 +1,8 @@
+$background-color: #18191a;
+$white: white;
+$gray: #eaeaea;
+$blue-sky: #1196f5;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -58,4 +63,52 @@ code {
 
 .full-w {
   width: 100vw;
+}
+
+.form {
+  background-color: $white;
+    row-gap: 20px;
+
+    width: 400px;
+
+    padding: 20px 10px;
+
+    .form-title {
+        text-align: center;
+        font-weight: bold;
+
+        font-size: 30px;
+    }
+
+    .form-container {
+        row-gap: 10px;
+        .form-field {
+            input {
+                width: 300px;
+                height: 35px;
+
+                border: $gray solid 2px;
+            }
+        }
+        .cleckbox-field {
+          align-items: center;
+          column-gap: 7px;
+
+          p {
+            margin: 0px;
+          }
+        }
+    }
+
+    .blue-sky-btn {
+        margin-top: 10px;
+
+        width: 300px;
+        height: 30px;
+
+        background-color: $blue-sky;
+        color: $white;
+
+        border: none;
+    }
 }
