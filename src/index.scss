@@ -95,7 +95,9 @@ code {
         .cleckbox-field {
           align-items: center;
           column-gap: 7px;
-
+          input {
+            cursor: pointer;
+          }
           p {
             margin: 0px;
           }
@@ -112,5 +114,16 @@ code {
         color: $white;
 
         border: none;
+
+        transition-duration: 0.3s;
+    }
+
+    .blue-sky-btn:hover {
+      background-color: transparent; 
+      color: $blue-sky;
+
+      border: $blue-sky solid 1px;
+
+      cursor: pointer;
     }
 }
