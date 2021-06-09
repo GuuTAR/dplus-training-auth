@@ -2,8 +2,11 @@ import './styles.scss'
 import { useEffect, useState } from 'react'
 import { faEnvelope, faKey, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useHistory } from 'react-router-dom'
 
 const RegisterForm = () => {
+
+    const history = useHistory()
 
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -18,6 +21,7 @@ const RegisterForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log({username, password, rePassword, email, acceptCon})
+        history.push("/")
     }
 
     return (
