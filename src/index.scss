@@ -3,6 +3,7 @@ $white: white;
 $gray: #eaeaea;
 $blue-sky: #1196f5;
 $green: #43cc48;
+$red: red;
 
 body {
   margin: 0;
@@ -91,6 +92,10 @@ code {
                 border: $gray solid 2px;
 
                 padding-left: 20px;
+            }
+
+            .error {
+              color: $red;
             }
         }
         .cleckbox-field {
