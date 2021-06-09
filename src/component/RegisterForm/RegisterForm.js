@@ -38,13 +38,13 @@ const RegisterForm = () => {
                     <h3 className="password margin-zero">
                         <FontAwesomeIcon icon={faKey} />&nbsp;Password
                     </h3>
-                    <input value={password} onChange={e => setPassword(e.target.value)} />
+                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
                 </div>
                 <div className="form-field flex-col">
                     <h3 className="re-password margin-zero">
                         <FontAwesomeIcon icon={faKey} />&nbsp;Re-Password
                     </h3>
-                    <input value={rePassword} onChange={e => setRePassword(e.target.value)} />
+                    <input type="password" value={rePassword} onChange={e => setRePassword(e.target.value)} />
                 </div>
                 <div className="form-field flex-col">
                     <h3 className="email margin-zero">
