@@ -32,25 +32,25 @@ const RegisterForm = () => {
                     <h3 className="username margin-zero">
                         <FontAwesomeIcon icon={faUser} />&nbsp;Username
                     </h3>
-                    <input value={username} onChange={e => setUsername(e.target.value)} />
+                    <input value={username} onChange={e => setUsername(e.target.value)} maxlength="16" />
                 </div>
                 <div className="form-field flex-col">
                     <h3 className="password margin-zero">
                         <FontAwesomeIcon icon={faKey} />&nbsp;Password
                     </h3>
-                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
+                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} maxlength="16" />
                 </div>
                 <div className="form-field flex-col">
                     <h3 className="re-password margin-zero">
                         <FontAwesomeIcon icon={faKey} />&nbsp;Re-Password
                     </h3>
-                    <input type="password" value={rePassword} onChange={e => setRePassword(e.target.value)} />
+                    <input type="password" value={rePassword} onChange={e => setRePassword(e.target.value)} maxlength="16" />
                 </div>
                 <div className="form-field flex-col">
                     <h3 className="email margin-zero">
                         <FontAwesomeIcon icon={faEnvelope} />&nbsp;Email
                     </h3>
-                    <input value={email} onChange={e => setEmail(e.target.value)} placeholder="example@myweb.com"  />
+                    <input value={email} onChange={e => setEmail(e.target.value)} placeholder="example@myweb.com" maxlength="40" />
                 </div>
                 <div className="cleckbox-field flex-row">
                     <input type="checkbox" value={acceptCon} onChange={() => setAcceptCon(!acceptCon)} />
