@@ -19,8 +19,8 @@ const LoginForm = () => {
     }
 
     return (
-        <div className="login-form-comp flex-col ali-cent">
-            <h2 className="title margin-zero">My website</h2>
+        <div className="login-form-comp flex-col ali-cent form">
+            <h2 className="form-title margin-zero">My website</h2>
             <form className="form-container flex-col" onSubmit={handleSubmit}>
                 <div className="form-field flex-col">
                     <h3 className="username margin-zero">
@@ -34,8 +34,8 @@ const LoginForm = () => {
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <Link to="/forget-password">ลืมรหัสผ่าน?</Link>
                 </div>
+                <input className="blue-sky-btn" type="submit" value="เข้าสู่ระบบ" />
             </form>
-            <input className="login-btn" type="submit" value="เข้าสู่ระบบ" />
             <div>
                 ยังไม่ได้เป็นสมาชิก?
                 <Link to="/register">สมัครสมาชิก</Link>
