@@ -20,7 +20,7 @@ const LoginForm = () => {
 
     return (
         <div className="login-form-comp flex-col ali-cent form">
-            <h2 className="form-title margin-zero">My website by GuuTAR</h2>
+            <h2 className="form-title margin-zero">My website</h2>
             <form className="form-container flex-col" onSubmit={handleSubmit}>
                 <div className="form-field flex-col">
                     <h3 className="username margin-zero">
