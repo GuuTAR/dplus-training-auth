@@ -126,7 +126,7 @@ const RegisterForm = () => {
                     </h3>
                     <input name="email" value={email} onChange={handleChange} placeholder="example@myweb.com" maxLength="40" />
                     {formErr.email.error && <label className="error">Email invalid format</label>}
-                    {showNullErr && formErr.email.null && <label className="error">This field is required</label>}
+                    {showNullErr && !formErr.email.error && formErr.email.null && <label className="error">This field is required</label>}
                 </div>
                 <div className="cleckbox-field flex-row">
                     <input name="acceptCon" type="checkbox" value={acceptCon} onChange={handleChange} />
