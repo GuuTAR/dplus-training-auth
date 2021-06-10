@@ -9,4 +9,31 @@
             color: $green;
         }
     }
+    @media screen and (max-width: 500px) {
+        width: 70vw !important;
+        .form-container {
+          .form-field {
+              input {
+                  width: 50vw !important;
+              }
+          }
+          .blue-sky-btn {
+            width: 50vw;
+          }
+        }
+    }
+    @media screen and (max-width: 400px) {
+      width: 90vw !important;
+      .form-container {
+        .form-field {
+            input {
+                width: 80vw !important;
+            }
+        }
+        .blue-sky-btn {
+          width: 80vw;
+        }
+      }
+  } 
 }
+
