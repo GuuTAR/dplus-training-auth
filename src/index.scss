@@ -70,9 +70,7 @@ code {
 .form {
   background-color: $white;
     row-gap: 20px;
-
     width: 400px;
-
     padding: 20px 10px;
 
     .form-title {
@@ -93,10 +91,6 @@ code {
 
                 padding-left: 20px;
             }
-
-            .error {
-              color: $red;
-            }
         }
         .cleckbox-field {
           align-items: center;
@@ -107,6 +101,9 @@ code {
           p {
             margin: 0px;
           }
+        }
+        .error {
+          color: $red;
         }
     }
 
