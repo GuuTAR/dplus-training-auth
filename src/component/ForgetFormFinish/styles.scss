@@ -1,9 +1,9 @@
 @import '../../index.scss';
 
 .forget-form-finish-comp {
+  align-items: center;
     .result-content {
         column-gap: 10px;
-
         .check-icon {
             font-size: 40px;
             color: $green;
@@ -11,28 +11,20 @@
     }
     @media screen and (max-width: 500px) {
         width: 70vw !important;
-        .form-container {
-          .form-field {
-              input {
-                  width: 50vw !important;
-              }
-          }
-          .blue-sky-btn {
-            width: 50vw;
-          }
+        .result-content {
+          justify-content: center;
+          text-align: center;
+
+          row-gap: 10px;
+        }
+        button {
+          width: 50vw !important;
         }
     }
     @media screen and (max-width: 400px) {
       width: 90vw !important;
-      .form-container {
-        .form-field {
-            input {
-                width: 80vw !important;
-            }
-        }
-        .blue-sky-btn {
-          width: 80vw;
-        }
+      button {
+        width: 50vw !important;
       }
   } 
 }
