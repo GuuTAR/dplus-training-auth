@@ -76,8 +76,9 @@ const RegisterForm = () => {
                 setEmail(value)
                 return
             case "password":
-                formErr.rePassword.error = (value !== rePassword)? true : false
+                formErr.password.error = (value.length < 6)? true : false
                 formErr.password.null = (value==="")? true: false
+                formErr.rePassword.error = (value !== rePassword)? true : false 
                 setPassword(value)
                 return
             case "re-password":
@@ -110,6 +111,7 @@ const RegisterForm = () => {
                         <FontAwesomeIcon icon={faKey} />&nbsp;Password*
                     </h3>
                     <input name="password" type="password" value={password} onChange={handleChange} maxLength="16" />
+                    {password && formErr.password.error && <label className="error">Password should be more than 5 characters</label>}
                     {showNullErr && formErr.password.null && <label className="error">This field is required</label>}
                 </div>
                 <div className="form-field flex-col">
