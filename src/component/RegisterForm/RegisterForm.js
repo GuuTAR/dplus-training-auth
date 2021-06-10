@@ -132,6 +132,7 @@ const RegisterForm = () => {
                     <input name="acceptCon" type="checkbox" value={acceptCon} onChange={handleChange} />
                     <p>ฉันยอมรับเงื่อนไขที่กำหนด</p>
                 </div>
+                {showNullErr && formErr.acceptCon.null && <label className="error">Please accept term and conditions</label>}
                 <input className="blue-sky-btn" type="submit" value="สมัครสมาชิก" />
             </form>
         </div>
